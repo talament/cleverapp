@@ -1,23 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import Button from './Button';
+import MuiButton from '@material-ui/core/Button';
+import Tooltip from './Tooltip';
+import ProgressBar from './ProgressBar';
+import SaveIcon from '@material-ui/icons/Save';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to start the matrix.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>Buttons</h2>
+        <Button variant="contained">Default</Button>
+        <Button variant="contained" color="primary">Primary</Button>
+        <Button variant="contained" color="secondary">Secondary</Button>
+        <Button variant="contained" disabled>Disabled</Button>
+        <h2>Tooltip</h2>
+        <Tooltip title="Save your work!"><MuiButton variant="contained" color="primary" endIcon={<SaveIcon />}>Save</MuiButton></Tooltip>
+        <h2>Progress Bar</h2>
+        <div style={{width:'50vw'}}>
+          <ProgressBar color="secondary" variant="determinate" value="50" />
+        </div>
       </header>
     </div>
   );
