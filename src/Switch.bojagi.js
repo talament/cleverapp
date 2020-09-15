@@ -1,9 +1,13 @@
 import React from 'react';
 import Switch from '@material-ui/core/Switch';
 
+export default {
+  title: 'Switch'
+};
+
 export const switches = () => <Switches />;
 
-export default function Switches() {
+function Switches() {
   const [state, setState] = React.useState({
     checkedA: true,
     checkedB: true,
