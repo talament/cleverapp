@@ -28,7 +28,7 @@ jobs:
       run: yarn
 
     - name: GH Environment Variables
-      run: echo GITHUB_SHA=$GITHUB_SHA; echo GITHUB_REF=$GITHUB_REF; echo GITHUB_HEAD_REF=$GITHUB_HEAD_REF; echo GITHUB_BASE_REF=$GITHUB_BASE_REF
+      run: env | grep GITHUB
 
 
     - name: Bojagi
