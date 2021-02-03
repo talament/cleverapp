@@ -36,6 +36,6 @@
     ]
   },
   "devDependencies": {
-    "@bojagi/cli": "^0.11.4"
+    "@bojagi/cli": "^0.12.5"
   }
 }
