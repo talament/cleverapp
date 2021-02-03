@@ -27,5 +27,9 @@ jobs:
     - name: Install
       run: yarn
 
+    - name: GH Environment Variables
+      run: echo GITHUB_SHA=$GITHUB_SHA; echo GITHUB_REF=$GITHUB_REF; echo GITHUB_HEAD_REF=$GITHUB_HEAD_REF; echo GITHUB_BASE_REF=$GITHUB_BASE_REF
+
+
     - name: Bojagi
       run: BOJAGI_SECRET=${{ secrets.BOJAGI_SECRET }} yarn bojagi deploy
