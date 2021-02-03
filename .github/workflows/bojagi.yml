@@ -32,4 +32,4 @@ jobs:
 
 
     - name: Bojagi
-      run: BOJAGI_SECRET=${{ secrets.BOJAGI_SECRET }} yarn bojagi deploy
+      run: DEBUG=bojagi:* BOJAGI_SECRET=${{ secrets.BOJAGI_SECRET }} yarn bojagi deploy
