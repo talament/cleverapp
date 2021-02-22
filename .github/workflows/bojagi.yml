@@ -1,6 +1,5 @@
 name: CI - Deploy
-on:
-  push:
+on: push
 
 jobs:
   run:
