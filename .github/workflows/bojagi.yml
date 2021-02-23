@@ -1,8 +1,6 @@
 name: CI - Deploy
-on:
-  push:
-    branches:
-    -  '**'
+on: push
+
 jobs:
   run:
     name: Upload Bojagi
