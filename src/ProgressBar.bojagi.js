@@ -14,5 +14,5 @@ const Container = styled('div')(({
     width: '75vw',
 }));
 
-export const animated = () => <Container><LinearProgress color="secondary" /></Container>;
-export const static50percent = () => <Container><LinearProgress color="secondary" variant="determinate" value="50" /></Container>;
+export const animated = () => <Container><LinearProgress /></Container>;
+export const static50percent = () => <Container><LinearProgress variant="determinate" value="50" /></Container>;
